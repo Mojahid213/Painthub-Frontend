@@ -5,7 +5,11 @@ export default function HeroSection() {
   return (
     <>
       <div className="container text-white">
-        <div className="md:flex justify-center items-center mt-10 gap-x-10">
+        <div
+          className="md:flex justify-center items-center mt-20 md:mt-5 gap-x-10"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           {/* Hero Text */}
           <div className="flex-1 px-2 md:px-0">
             <h1 className="text-center md:text-left text-7xl sm:text-8xl md:text-7xl lg:text-8xl xl:text-9xl md:ml-5  xl:ml-0 font-Dosis font-bold">
