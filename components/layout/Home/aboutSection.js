@@ -26,7 +26,12 @@ export default function AboutSection() {
         <div className="mt-20">
           <div className="block md:flex justify-center items-center gap-x-10 xl:gap-x-16">
             <div className="flex-1 flex justify-center items-center px-5 md:px-0">
-              <Image src="/globe_1.png" height={500} width={500}></Image>
+              <Image
+                src="/earth.svg"
+                height={500}
+                width={500}
+                className="hover:animate-spin-slow"
+              ></Image>
             </div>
             <div className="flex-1">
               <h1 className="text-center text-6xl md:text-left md:text-7xl lg:text-8xl font-Dosis font-bold">
