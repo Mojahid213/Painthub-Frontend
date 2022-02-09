@@ -19,7 +19,7 @@ export default function Home({ services }) {
           </h1>
           {/* <div className="h-2 mt-3 w-1/3 rounded-full bg-gradient-to-r from-red-300 to-red-600"></div> */}
         </div>
-        <div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 md:gap-10">
+        <div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-x-5 gap-y-8 md:gap-10">
           {services.data.map((service) => {
             return (
               <div key={service.id}>
