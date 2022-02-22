@@ -22,7 +22,11 @@ export default function HeroSection() {
           {/* Hero Background */}
           <div className="flex-1">
             <Tilt options={{ max: 15, transition: true, scale: 1 }}>
-              <Image src="/paint_brush.svg" height={1050} width={1050}></Image>
+              <Image
+                src="/static/images/paint_brush.svg"
+                height={1050}
+                width={1050}
+              ></Image>
             </Tilt>
           </div>
         </div>

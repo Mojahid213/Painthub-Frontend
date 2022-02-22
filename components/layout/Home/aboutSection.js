@@ -27,7 +27,7 @@ export default function AboutSection() {
           <div className="block md:flex justify-center items-center gap-x-10 xl:gap-x-16">
             <div className="flex-1 flex justify-center items-center px-5 md:px-0">
               <Image
-                src="/earth.svg"
+                src="/static/images/earth.svg"
                 height={500}
                 width={500}
                 className="hover:animate-spin-slow"
