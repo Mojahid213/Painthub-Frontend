@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Mousewheel } from "swiper";
 // Import Swiper styles
 import "swiper/css";
+import FooterSection from "../components/layout/footer";
 
 export default function Home({ services, feedbacks }) {
   return (
@@ -23,7 +24,7 @@ export default function Home({ services, feedbacks }) {
 
       {/* Painting Sollutions Section */}
       <div className="mt-10 container px-8">
-        <div className="mb-10 md:mb-12 text-white border-solid border-l-4 border-amber-500 px-1">
+        <div className="mb-10 md:mb-12 text-white border-solid border-l-4 border-cyan-500 px-1">
           <h1 className="text-5xl md:text-6xl font-bold font-Dosis">
             Painting Sollutions
           </h1>
@@ -84,12 +85,92 @@ export default function Home({ services, feedbacks }) {
 
       {/* FAQ section */}
       <div className="mt-10 px-8 container">
-        <div className="text-white border-solid border-l-4 border-blue-500 px-1">
+        <div className="text-white border-solid border-l-4 border-amber-500 px-1">
           <h1 className="text-5xl md:text-6xl font-bold font-Dosis">
             Frequently asked
           </h1>
         </div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-8">
+          {/* FAQ section Image */}
+          <div className="flex-1">
+            <Image
+              src="/static/images/woman_thinking.svg"
+              height={550}
+              width={550}
+            ></Image>
+          </div>
+          {/* FAQ section Questions */}
+          <div className="flex-1 text-white">
+            <div
+              tabIndex={0}
+              className="collapse md:my-5 collapse-arrow border border-amber-200 rounded-xl"
+            >
+              <input type="checkbox" />
+              <div className="collapse-title text-xl font-Roboto-Slab font-bold">
+                <p>Painthub service policy?</p>
+              </div>
+              <div className="collapse-content font-Dosis text-lg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  fugiat reiciendis est voluptatibus cum vero suscipit error
+                  atque sapiente expedita.
+                </p>
+              </div>
+            </div>
+            <div
+              tabIndex={0}
+              className="collapse my-5 collapse-arrow border border-amber-200 rounded-xl"
+            >
+              <input type="checkbox" />
+              <div className="collapse-title text-xl font-Roboto-Slab font-bold">
+                <p>Warranty and Guarantee policy?</p>
+              </div>
+              <div className="collapse-content font-Dosis text-lg">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                  quidem amet soluta excepturi odit vero ab non ea fugiat
+                  mollitia aspernatur voluptatum quam dolorem, praesentium
+                  inventore architecto. Dolorum, dignissimos illo.
+                </p>
+              </div>
+            </div>
+            <div
+              tabIndex={0}
+              className="collapse my-5 collapse-arrow border border-amber-200 rounded-xl"
+            >
+              <input type="checkbox" />
+              <div className="collapse-title text-xl font-Roboto-Slab font-bold">
+                <p>Common charges?</p>
+              </div>
+              <div className="collapse-content font-Dosis text-lg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  neque reiciendis maiores, repellat optio quisquam.
+                </p>
+              </div>
+            </div>
+            <div
+              tabIndex={0}
+              className="collapse my-5 collapse-arrow border border-amber-200 rounded-xl"
+            >
+              <input type="checkbox" />
+              <div className="collapse-title text-xl font-Roboto-Slab font-bold">
+                <p>Return policy?</p>
+              </div>
+              <div className="collapse-content font-Dosis text-lg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aspernatur laboriosam eaque praesentium maiores officiis,
+                  inventore repellat ipsa dolores. Reprehenderit pariatur
+                  officia cumque nisi aperiam autem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* Footer */}
+      <FooterSection />
     </>
   );
 }

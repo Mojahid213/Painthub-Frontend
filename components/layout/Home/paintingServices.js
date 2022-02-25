@@ -14,15 +14,15 @@ export default function PaintingServices({ service }) {
     <div
       // onMouseOver={() => setHovered(true)}
       // onMouseOut={() => setHovered(false)}
-      className="relative p-5 rounded-xl h-full overflow-hidden bg-indigo-500 cursor-pointer hover:scale-105 transition duration-500"
+      className="relative p-5 rounded-xl h-full overflow-hidden cursor-pointer hover:scale-105 transition duration-500 bg-gradient-to-bl from-sky-400 to-blue-500"
     >
       <div className="h-full text-center">
         <Image src={img} height={150} width={150}></Image>
         <div className="mt-3">
-          <h1 className="text-3xl font-Roboto-Slab capitalize cursor-pointer">
+          <h1 className="text-3xl text-slate-800 font-bold font-Roboto-Slab capitalize cursor-pointer">
             {title}
           </h1>
-          <p className="font-Dosis text-justify text-lg mt-5 cursor-pointer">
+          <p className="font-Dosis text-slate-900 text-justify text-lg mt-5 cursor-pointer">
             {description}
           </p>
         </div>
